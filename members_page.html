@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>NAUNSA NI!</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/includes.css">
+    <style>
+        /* Black background for the body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text for overall readability */
+        }
+
+        /* Wrapper for the entire page */
+        #wrapper {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            width: 95%; /* Full width for the wrapper */
+            margin: 0 auto; /* Center the wrapper */
+        }
+
+        /* Left and right ads with grey backgrounds */
+        .left-ad, .right-ad {
+            background-color: #333; /* Dark gray for the ads */
+            color: #fff;
+            padding: 20px;
+            font-weight: bold;
+            width: 12%; /* Reduced width for ads */
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* Main content area with a white background and black text */
+        #container {
+            background-color: #fff; /* White background for content */
+            padding: 20px;
+            width: 76%; /* Increased content area width */
+            max-width: 1200px; /* Optional: set a max width for very large screens */
+            border-radius: 10px;
+            color: #000; /* Black text inside the container */
+            margin: 0 auto; /* Center the container */
+        }
+
+        /* Header and navigation styles */
+        h2 {
+            color: #000; /* Black color for the headers */
+            text-align: center;
+            font-size: 3em; /* Increased font size */
+        }
+
+        /* Make the content visually clear */
+        #content p {
+            font-size: 1.5em; /* Increased font size */
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #000; /* Black text for better contrast */
+        }
+
+        /* Style the image to fit well */
+        img {
+            display: block;
+            margin: 20px auto;
+            border: 5px solid #000; /* Black border for image */
+            border-radius: 15px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="ad left-ad">
+            <!-- Left ad content here -->
+            <p>Left Ad</p>
+        </div>
+        
+        <div id="container">
+            <?php include('header.php'); ?>
+            <?php include('nav.php'); ?>
+            <?php include('info-col.php'); ?>
+            <div id="content">
+                <h2>Hompage</h2>
+
+                <!-- Add the image of the Maine Coon here -->
+                <img src="https://blogstudio.s3.theshoppad.net/bella-boots-organic-pet-food/02e83b91d1fa7bef520082affb0e7ada.png" alt="Maine Coon Cat">
+
+                <p>The Maine Coon is one of the largest domesticated cat breeds, known for its distinctive physical features and friendly, social personality. Maine Coons have long, shaggy fur that is dense and water-resistant, which helps them withstand cold climates. Their fur comes in a wide variety of colors and patterns.</p>
+
+				<p>They have a broad, muscular body, bushy tails, and tufted ears with lynx-like tips. Their eyes are large, expressive, and can be gold, green, or copper in color, often with a slightly almond shape. Maine Coons are gentle giants, often weighing between 13 to 18 pounds (6-8 kg) for females and up to 20 pounds (9 kg) or more for males.</p>
+
+				<p>In terms of personality, they are affectionate, intelligent, and curious, often described as dog-like in their behavior due to their loyalty and playful nature. They tend to be friendly with children, other pets, and enjoy being part of family activities, though they aren't overly dependent on constant attention.</p>
+
+				<p>Their soft voices often contrast with their size, as they tend to communicate with trills and chirps rather than loud meows. Overall, Maine Coons are beloved for their balanced combination of elegance, intelligence, and affectionate disposition.</p>
+            </div>
+        </div>
+
+        <div class="ad right-ad">
+            <!-- Right ad content here -->
+            <p>Right Ad</p>
+        </div>
+    </div>
+    
+    <?php include('footer.php'); ?>
+</body>
+</html>
