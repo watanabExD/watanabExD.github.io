@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hans Jonas - Photography Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        h1, h2, h3, p {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #000;
+        }
+
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav a {
+            margin: 0 15px;
+            font-size: 1em;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+        }
+
+        .hero .intro {
+            max-width: 500px;
+        }
+
+        .hero h1 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        .hero img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Work Section */
+        .work {
+            padding: 50px;
+        }
+
+        .work h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .work .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .work .gallery img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #000;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact input, .contact select, .contact button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact input, .contact select {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .contact button {
+            background-color: #555;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #777;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">HANS</div>
+        <nav>
+            <a href="#work">Works</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="intro">
+            <h1>Hi, my name is Hans Jonas.</h1>
+            <p>I am a professional photographer. Welcome to my portfolio where I share my work, my passion, and my journey through photography.</p>
+        </div>
+        <img src="https://via.placeholder.com/500x400" alt="Photographer Portrait">
+    </section>
+
+    <section id="work" class="work">
+        <h2>My Work, My Journey</h2>
+        <p>Explore some of my favorite photography projects.</p>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/200" alt="Work 1">
+            <img src="https://via.placeholder.com/200" alt="Work 2">
+            <img src="https://via.placeholder.com/200" alt="Work 3">
+            <img src="https://via.placeholder.com/200" alt="Work 4">
+            <img src="https://via.placeholder.com/200" alt="Work 5">
+            <img src="https://via.placeholder.com/200" alt="Work 6">
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Stay Connected</h2>
+        <form>
+            <input type="text" name="first_name" placeholder="Enter your first name">
+            <input type="text" name="last_name" placeholder="Enter your last name">
+            <input type="email" name="email" placeholder="Enter your email address">
+            <select name="service">
+                <option value="">What kind of service are you looking for?</option>
+                <option value="wedding">Wedding Photography</option>
+                <option value="portrait">Portrait Photography</option>
+                <option value="event">Event Photography</option>
+            </select>
+            <button type="submit">Connect Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hans Jonas. All rights reserved.</p>
+        <div>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
