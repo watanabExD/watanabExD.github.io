@@ -1,4 +1,4 @@
-/* Reset default styles */
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,54 +6,41 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #e0e0e0;
-  background: #121212;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background: #1f1f1f;
-  padding: 1rem 0;
-  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
+  gap: 1rem;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: #e0e0e0;
-  transition: color 0.3s;
+.nav-links li {
+  text-transform: uppercase;
 }
 
-.nav-links a:hover {
-  color: #4CAF50;
-}
-
-section {
-  padding: 5rem 2rem;
-  min-height: 100vh;
-}
-
-#home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  background: #222;
+.hero {
+  background-image: url('hero-background.jpg');
+  background-size: cover;
   color: #fff;
+  text-align: center;
+  padding: 5rem 2rem;
 }
 
 .hero h1 {
@@ -61,30 +48,54 @@ section {
 }
 
 .hero span {
-  color: #4CAF50;
+  color: #ff9900;
 }
 
 .hero .btn {
-  margin: 1rem;
-  padding: 0.8rem 2rem;
+  background-color: #000;
   color: #fff;
-  background: #4CAF50;
-  text-decoration: none;
+  padding: 0.8rem 2rem;
   border-radius: 5px;
-  transition: background 0.3s;
+  margin-top: 1rem;
 }
 
-.hero .btn:hover {
-  background: #3a9d43;
+.top-picks {
+  padding: 2rem;
+  text-align: center;
 }
 
-#about, #resume, #portfolio {
-  background: #1c1c1c;
-  border-top: 2px solid #333;
+.bikes-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.bike-item {
+  text-align: center;
+}
+
+.accessories {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.accessory-item {
+  text-align: center;
 }
 
 footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
   text-align: center;
-  padding: 1rem;
-  background: #1f1f1f;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a {
+  color: #fff;
 }
