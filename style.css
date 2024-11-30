@@ -63,10 +63,15 @@ section .content {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row-reverse; /* Image on the right */
   text-align: center;
-  background: url('https://github.com/watanabExD/watanabExD.github.io/blob/main/astro.jpg?raw=true') no-repeat right center/cover;
   color: #fff;
+}
+
+#home img {
+  width: 40%; /* Adjust width as needed */
+  margin-left: 2rem;
+  border-radius: 8px; /* Optional, for rounded corners */
 }
 
 .hero h1 {
@@ -103,20 +108,54 @@ section .content {
 
 /* About Section */
 #about {
-  background: url('https://github.com/watanabExD/watanabExD.github.io/blob/main/illusion.jpg?raw=true') no-repeat right center/cover;
-  border-top: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-color: #1c1c1c; /* Keep a dark background */
+}
+
+#about img {
+  width: 40%; /* Adjust width as needed */
+  margin-right: 2rem;
+  border-radius: 8px; /* Optional, for rounded corners */
+}
+
+#about .content {
+  max-width: 600px;
 }
 
 /* Resume Section */
 #resume {
-  background: url('https://github.com/watanabExD/watanabExD.github.io/blob/main/wave.jpg?raw=true') no-repeat right center/cover;
-  border-top: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse; /* Image on the right */
+  background-color: #1c1c1c; /* Keep a dark background */
+}
+
+#resume img {
+  width: 40%; /* Adjust width as needed */
+  margin-left: 2rem;
+  border-radius: 8px; /* Optional, for rounded corners */
+}
+
+#resume .content {
+  max-width: 600px;
 }
 
 /* Portfolio Section */
 #portfolio {
-  background: url('https://github.com/watanabExD/watanabExD.github.io/blob/main/sakura.jpg?raw=true') no-repeat right center/cover;
-  border-top: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #1c1c1c; /* Keep a dark background */
+}
+
+#portfolio img {
+  width: 50%; /* Adjust width to fit in the center */
+  border-radius: 8px; /* Optional, for rounded corners */
 }
 
 /* Footer */
