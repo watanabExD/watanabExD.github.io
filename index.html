@@ -1,82 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css"> <!-- Link to your style.css -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">PORTFOLIO</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Home Section -->
-  <section id="home">
-    <div class="content">
-      <h1>Joevin Russel <span>Casibua</span></h1>
-      <p>Computer Science Student</p>
-      <div class="buttons">
-        <a href="#resume" class="btn">Resume</a>
-        <a href="#portfolio" class="btn">Portfolio</a>
-      </div>
-    </div>
-    <img src="https://github.com/watanabExD/watanabExD.github.io/blob/main/astro.jpg?raw=true" alt="Home Image">
-  </section>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Creative Developer</h1>
+            <p>Turning ideas into digital reality</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <img src="https://github.com/watanabExD/watanabExD.github.io/blob/main/illusion.jpg?raw=true" alt="About Image">
-    <div class="content">
-      <h2>About</h2>
-      <p>Email: <a href="mailto:jmartin@uptowerk.com">jmartin@uptowerk.com</a></p>
-      <p>Graphic Designer with over 10 years of experience specializing in IT Department management...</p>
-      <p>Location: Florida, Orlando</p>
-    </div>
-  </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Passionate developer with expertise in creating modern web experiences. Focused on delivering clean, efficient, and user-friendly solutions.</p>
+                    <div class="signature">Your Name</div>
+                </div>
+                <div class="about-image">
+                    <img src="/placeholder.svg?height=400&width=300" alt="Profile Image">
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Resume Section -->
-  <section id="resume">
-    <img src="https://github.com/watanabExD/watanabExD.github.io/blob/main/wave.jpg?raw=true" alt="Resume Image">
-    <div class="content">
-      <h2>Resume</h2>
-      <div class="skills">
-        <h3>Software Skills</h3>
-        <ul>
-          <li>Photoshop: ★★★★★</li>
-          <li>Illustrator: ★★★★★</li>
-          <li>Adobe XD: ★★★★☆</li>
-          <li>After Effects: ★★★★☆</li>
-        </ul>
-      </div>
-      <div class="experience">
-        <h3>Experience</h3>
-        <ul>
-          <li>Art Director at White Fish Advertising Co.</li>
-          <li>Senior Graphic Designer at Pyramids Sun Advertising Co.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    <section id="services" class="services">
+        <div class="container">
+            <h2>What I Do</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and dynamic websites using modern technologies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing intuitive and beautiful user interfaces.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile Development</h3>
+                    <p>Building cross-platform mobile applications.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Performance Optimization</h3>
+                    <p>Optimizing applications for maximum speed and efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio">
-    <img src="https://github.com/watanabExD/watanabExD.github.io/blob/main/sakura.jpg?raw=true" alt="Portfolio Image">
-    <div class="content">
-      <h2>Portfolio</h2>
-      <p>Coming Soon!</p>
-    </div>
-  </section>
+    <section id="work" class="work">
+        <div class="container">
+            <h2>Recent Work</h2>
+            <div class="work-grid">
+                <div class="work-item">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Project 1">
+                    <div class="work-overlay">
+                        <h3>Project One</h3>
+                        <p>Web Development</p>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Project 2">
+                    <div class="work-overlay">
+                        <h3>Project Two</h3>
+                        <p>UI/UX Design</p>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Project 3">
+                    <div class="work-overlay">
+                        <h3>Project Three</h3>
+                        <p>Mobile App</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2024 Joevin Russel Casibua</p>
-  </footer>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <form class="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Your Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
