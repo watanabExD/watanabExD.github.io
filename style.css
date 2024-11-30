@@ -23,7 +23,7 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: rgba(10, 10, 10, 0.95);
+    background-color: #0a0a0a;
     z-index: 1000;
     padding: 20px 0;
 }
@@ -66,7 +66,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #111111;
+    background-color: #0a0a0a;
     padding: 0 20px;
 }
 
@@ -131,7 +131,7 @@ body {
 /* Services Section */
 .services {
     padding: 100px 0;
-    background-color: #0a0a0a;
+    background-color: #1a1a1a;
 }
 
 .services-grid {
@@ -142,7 +142,7 @@ body {
 }
 
 .service-card {
-    background-color: #111111;
+    background-color: #222222;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
@@ -161,7 +161,7 @@ body {
 /* Work Section */
 .work {
     padding: 100px 0;
-    background-color: #111111;
+    background-color: #222222;
 }
 
 .work-grid {
@@ -205,7 +205,7 @@ body {
 /* Contact Section */
 .contact {
     padding: 100px 0;
-    background-color: #0a0a0a;
+    background-color: #2a2a2a;
 }
 
 .contact-form {
@@ -221,7 +221,7 @@ body {
     padding: 15px;
     border: none;
     border-radius: 5px;
-    background-color: #111111;
+    background-color: #333333;
     color: #ffffff;
 }
 
@@ -247,7 +247,7 @@ body {
 /* Footer */
 .footer {
     padding: 30px 0;
-    background-color: #111111;
+    background-color: #0a0a0a;
     text-align: center;
 }
 
