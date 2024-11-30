@@ -70,7 +70,7 @@ section .content {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 4rem;  /* Increased size for better readability */
 }
 
 .hero span {
@@ -89,6 +89,16 @@ section .content {
 
 .hero .btn:hover {
   background: #3a9d43;
+}
+
+/* Paragraph added to the Home section */
+.hero p {
+  font-size: 1.5rem;  /* Adjusted size for better readability */
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 /* About Section */
