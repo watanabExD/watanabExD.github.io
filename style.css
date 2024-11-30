@@ -1,10 +1,4 @@
-/* Reset default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* styles.css */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -52,7 +46,7 @@ section {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background: #222;
+  background: url('https://i.pinimg.com/736x/41/7f/35/417f35f8df9ad27617954e00ab7b989f.jpg') no-repeat center center/cover;
   color: #fff;
 }
 
