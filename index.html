@@ -2,40 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create a Personal Portfolio Website using HTML and CSS | Codehal</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h2 class="logo"><span>J</span>oe.</h2>
-        <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">PORTFOLIO</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-        <a href="#" class="btn-talk">Let's Talk</a>
     </header>
-    <section class="home">
-        <div class="content">
-            <h2>Hi, I'm <span>Joe Greyson</span></h2>
-            <h4>Frontend Developer</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A esse totam provident voluptas similique.
-                Impedit incidunt atque recusandae rem quam.</p>
-            <div class="btn-group">
-                <a href="#">Hire Me</a>
-                <a href="#">See Projects</a>
-            </div>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Creative Developer</h1>
+            <p>Turning ideas into digital reality</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Passionate developer with expertise in creating modern web experiences. Focused on delivering clean, efficient, and user-friendly solutions.</p>
+                    <div class="signature">Your Name</div>
+                </div>
+                <div class="about-image">
+                    <img src="/placeholder.svg?height=400&width=300" alt="Profile Image">
+                </div>
             </div>
         </div>
     </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>What I Do</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and dynamic websites using modern technologies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing intuitive and beautiful user interfaces.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile Development</h3>
+                    <p>Building cross-platform mobile applications.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Performance Optimization</h3>
+                    <p>Optimizing applications for maximum speed and efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="work">
+        <div class="container">
+            <h2>Recent Work</h2>
+            <div class="work-grid">
+                <div class="work-item">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Project 1">
+                    <div class="work-overlay">
+                        <h3>Project One</h3>
+                        <p>Web Development</p>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Project 2">
+                    <div class="work-overlay">
+                        <h3>Project Two</h3>
+                        <p>UI/UX Design</p>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <img src="/placeholder.svg?height=300&width=400" alt="Project 3">
+                    <div class="work-overlay">
+                        <h3>Project Three</h3>
+                        <p>Mobile App</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <form class="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Your Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
+
