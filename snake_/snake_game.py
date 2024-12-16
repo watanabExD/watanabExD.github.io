@@ -30,6 +30,10 @@ def our_snake(snake_block, snake_list):
     for x in snake_list:
         pygame.draw.rect(window, GREEN, [x[0], x[1], snake_block, snake_block])
 
+def your_score(score):
+    value = font.render("Score: " + str(score), True, WHITE)
+    window.blit(value, [10, 10])
+
 def message(msg, color):
     mesg = font.render(msg, True, color)
     window.blit(mesg, [width / 6, height / 3])
@@ -52,9 +56,9 @@ def gameLoop():
 
     while not game_over:
 
-        while game_close == True:
+        while game_close:
             window.fill(BLACK)
-            message("You Lost! Press Q-Quit or C-Play Again", RED)
+            message(f"You Lost! Your Score: {length_of_snake - 1}. Press Q-Quit or C-Play Again", RED)
             pygame.display.update()
 
             for event in pygame.event.get():
@@ -69,28 +73,29 @@ def gameLoop():
             if event.type == pygame.QUIT:
                 game_over = True
             if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_LEFT:
+                if event.key == pygame.K_LEFT and x1_change == 0:
                     x1_change = -snake_block
                     y1_change = 0
-                elif event.key == pygame.K_RIGHT:
+                elif event.key == pygame.K_RIGHT and x1_change == 0:
                     x1_change = snake_block
                     y1_change = 0
-                elif event.key == pygame.K_UP:
+                elif event.key == pygame.K_UP and y1_change == 0:
                     y1_change = -snake_block
                     x1_change = 0
-                elif event.key == pygame.K_DOWN:
+                elif event.key == pygame.K_DOWN and y1_change == 0:
                     y1_change = snake_block
                     x1_change = 0
 
         if x1 >= width or x1 < 0 or y1 >= height or y1 < 0:
             game_close = True
+        
         x1 += x1_change
         y1 += y1_change
         window.fill(BLACK)
+
         pygame.draw.rect(window, RED, [foodx, foody, snake_block, snake_block])
-        snake_head = []
-        snake_head.append(x1)
-        snake_head.append(y1)
+        
+        snake_head = [x1, y1]
         snake_list.append(snake_head)
         if len(snake_list) > length_of_snake:
             del snake_list[0]
@@ -100,15 +105,17 @@ def gameLoop():
                 game_close = True
 
         our_snake(snake_block, snake_list)
+        your_score(length_of_snake - 1)
 
         pygame.display.update()
 
         if x1 == foodx and y1 == foody:
-            foodx = round(random.randrange(0, width - snake_block) / 20.0) * 20.0
-            foody = round(random.randrange(0, height - snake_block) / 20.0) * 20.0
+            while [foodx, foody] in snake_list:
+                foodx = round(random.randrange(0, width - snake_block) / 20.0) * 20.0
+                foody = round(random.randrange(0, height - snake_block) / 20.0) * 20.0
             length_of_snake += 1
 
-        clock.tick(snake_speed)
+        clock.tick(snake_speed + (length_of_snake // 5))
 
     pygame.quit()
     quit()
