@@ -11,7 +11,8 @@
 <body>
     <header class="header">
         <nav class="nav container">
-            <div class="logo">MY PORTFOLIO</div>
+            <!-- Make the logo a clickable link -->
+            <div class="logo"><a href="#home" style="text-decoration: none; color: inherit;">MY PORTFOLIO</a></div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -75,8 +76,7 @@
                 <div class="service-card">
                     <div class="service-icon"><i class="ri-arrow-down-double-line"></i></div>
                     <h3></h3>
-                    <p>
-I have a basic understanding of CSS and how it is used to style websites. I’m familiar with concepts like selectors, properties, and values, and I know how to apply styles such as colors, fonts, margins, padding, and borders to HTML elements. </p>
+                    <p>I have a basic understanding of CSS and how it is used to style websites. I’m familiar with concepts like selectors, properties, and values, and I know how to apply styles such as colors, fonts, margins, padding, and borders to HTML elements. </p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon"><i class="ri-arrow-down-double-line"></i></div>
@@ -125,21 +125,23 @@ I have a basic understanding of CSS and how it is used to style websites. I’m 
     <section id="contact" class="contact">
         <div class="container">
             <h2>Get in Touch</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" required></textarea>
-                <button type="submit" class="submit-button">Send Message</button>
-            </form>
+            <div class="social-links">
+                <!-- Facebook link -->
+                <a href="https://www.facebook.com/yourprofile" target="_blank">
+                    <i class="ri-facebook-box-fill" style="font-size: 30px;"></i> Facebook
+                </a>
+                <!-- Email link -->
+                <a href="mailto:youremail@example.com">
+                    <i class="ri-mail-fill" style="font-size: 30px;"></i> Email
+                </a>
+            </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 Your Portfolio. All rights reserved.</p>
-            </div>
         </div>
     </footer>
 </body>
 </html>
-
